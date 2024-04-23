@@ -1,12 +1,26 @@
-import './style.css'
 import logo from '../../imagens/arvore.png'
+import styled from 'styled-components';
+
+const ContainerLogo = styled.div`
+display: flex;
+   
+`
+const ImagemLogo = styled.img`
+display: block;
+height: 75px;
+margin-right: 45px;
+`
+const Titulo = styled.h1`
+display: inline;
+`
 
 function Logo() {
     return (
-        <div className='logo'>
-            <img className='imagemmeio' src={logo} alt='Personagem'></img>
-            <h1>"Joana Eru'Anna"</h1>
-        </div>
+        <ContainerLogo className='logo'>
+            <ImagemLogo  src={logo} alt='Personagem' />
+            <Titulo>"Joana Eru'Anna"</Titulo>
+        </ContainerLogo>
+        
     )
 }
 
