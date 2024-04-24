@@ -4,15 +4,16 @@ import { useState } from "react"
 import { livros } from './dadosPesquisa'
 
 const PesquisaContainer = styled.section`
-        background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
-        color: #FFF;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+color: #black;
         text-align: center;
         padding: 85px 0;
         height: 570px;
         width: 100%;
 `
 const Titulo = styled.h2`
-        color: #FFF;
+        
         font-size: 36px;
         text-align: center;
         width: 100%;
@@ -24,12 +25,14 @@ const Subtitulo = styled.h3`
 
 `
 const Resultado = styled.div`
+color: #black;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     cursor: pointer;
     p {
+        color: #black;
         width: 200px;
     }
     img {
