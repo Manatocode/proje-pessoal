@@ -16,11 +16,9 @@ function UltimosLancamento () {
                 <img src={livro.src}/>
         ))}
         </UltimosLancamentoContainer>
-<<<<<<< HEAD
+        
+        
 
-=======
-       
->>>>>>> parent of d93ae8a (5)
     )
 }
 
