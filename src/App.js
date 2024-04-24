@@ -16,8 +16,7 @@ function App() {
     <AppContainer>
       <Header />
       <Pesquisa />
-      <UltimosLancamento />
-      
+      <UltimosLancamento />      
     </AppContainer>
     
   );

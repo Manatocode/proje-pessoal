@@ -30,8 +30,9 @@ function UltimosLancamento() {
         <UltimosLancamentoContainer>
             <Container>
                 <Row>
-                    <h2>Ultimos Lançamentos</h2>
+                    
                     <NovosLivrosContainer>
+                    <h2>Ultimos Lançamentos</h2>
                     {livros.map(livro => (
                         <ImgLivro src={livro.src} />                     
 
