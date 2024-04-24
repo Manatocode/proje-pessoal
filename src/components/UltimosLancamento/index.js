@@ -16,9 +16,7 @@ function UltimosLancamento () {
                 <img src={livro.src}/>
         ))}
         </UltimosLancamentoContainer>
-        
-        
-
+       
     )
 }
 
