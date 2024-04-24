@@ -47,6 +47,5 @@ function UltimosLancamento() {
         
 }
 
-        console.log("1" + 2 + 4); // Saída: "124"
-        console.log(5 + 4 + "3"); // Saída: "93"
+  
 export default UltimosLancamento
