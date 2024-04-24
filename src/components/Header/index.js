@@ -7,7 +7,6 @@ const HeaderContainer = styled.header`
 background-color: #FFF;
     display: flex;
     justify-content: center;
-    margin: 1dvh 0 0 0;
 `
 
 function Header() {
