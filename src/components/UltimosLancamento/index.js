@@ -22,6 +22,10 @@ const NovosLivrosContainer = styled.div`
 
 `
 
+const Titulo = styled.h2`
+
+`
+
 
 function UltimosLancamento() {
 
@@ -29,20 +33,16 @@ function UltimosLancamento() {
     return (
         <UltimosLancamentoContainer>
             <Container>
-                <Row>
-                    
+                <Row>                    
                     <NovosLivrosContainer>
-                    <h2>Ultimos Lançamentos</h2>
+                    <Titulo>Ultimos Lançamentos</Titulo>
                     {livros.map(livro => (
-                        <ImgLivro src={livro.src} />                     
-
+                        <ImgLivro src={livro.src} />                    
                     ))}
                     </NovosLivrosContainer>
                     </Row>
                     </Container>
         </UltimosLancamentoContainer>
-        
-        
 
     )
         
