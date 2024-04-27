@@ -2,7 +2,9 @@ import { livros } from './dadosUltimosLancamento'
 import styled from 'styled-components'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import CardRecomenda from '../CardRecomenda';
+import imagemLivro from '../../imagens/esquerda.jpg'
+import { Titulo }  from '../Titulo'
 
 
 const UltimosLancamentoContainer = styled.section`
@@ -22,11 +24,6 @@ const NovosLivrosContainer = styled.div`
 
 `
 
-const Titulo = styled.h2`
-
-`
-
-
 function UltimosLancamento() {
 
 
@@ -35,11 +32,21 @@ function UltimosLancamento() {
             <Container>
                 <Row>                    
                     <NovosLivrosContainer>
-                    <Titulo>Ultimos Lançamentos</Titulo>
+                    <Titulo cor={"000"}               
+                    
+                    >                    
+                    Ultimos Lançamentos</Titulo>
                     {livros.map(livro => (
                         <ImgLivro src={livro.src} />                    
                     ))}
                     </NovosLivrosContainer>
+                    <CardRecomenda 
+                    titulo="Talvez você se interesse por"
+                    subtitulo="Angular 11"
+                    descricao="Construindo uma aplicação com a plataforma Google"
+                    img={imagemLivro}
+                    />
+                    
                     </Row>
                     </Container>
         </UltimosLancamentoContainer>
