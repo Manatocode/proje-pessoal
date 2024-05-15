@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 import NavBar from '../NavBar'
 import NavBarGif from '../NavBarGif'
@@ -14,7 +15,10 @@ background-color: #FFF;
 function Header() {
     return (
     <HeaderContainer>
-        <Logo />
+        <Link to='/'>
+            <Logo />
+        </Link>
+        
         <NavBar />
         <NavBarGif />
     </HeaderContainer>
