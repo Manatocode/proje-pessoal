@@ -1,6 +1,5 @@
-import Header from '../Header'
-import Pesquisa from '../Pesquisa';
-import UltimosLancamento from '../UltimosLancamento';
+import Pesquisa from '../components/Pesquisa';
+import UltimosLancamento from '../components/UltimosLancamento';
 import styled from 'styled-components'
 
 
@@ -11,13 +10,13 @@ const AppContainer = styled.div`
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
 `
 
-function Favoritos() {
+function Home() {
   return (
     <AppContainer>
       <Pesquisa />
-    </AppContainer>
-    
+      <UltimosLancamento />      
+    </AppContainer>    
   );
 }
 
-export default Favoritos;
+export default Home;
