@@ -4,6 +4,7 @@ import { useState } from "react"
 import { livros } from './dadosPesquisa'
 import { useEffect } from "react"
 import { getLivros } from "../../servicos/livros"
+import { postFavorito } from "../../servicos/favoritos"
 
 const PesquisaContainer = styled.section`
 background: rgb(34,193,195);
@@ -59,6 +60,10 @@ function Pesquisa() {
         setLivros(livrosDaApi)
     }
     
+    async function insertFavorito(id) {
+        await postFavorito(id)
+        alert(`Livro de id:${id} inserido!`)
+}
 
     return (
         <PesquisaContainer>
@@ -72,7 +77,7 @@ function Pesquisa() {
                     setLivrosPesquisados(resultadoPesquisa)
                 }}
             />
-            {livrosPesquisados.map( livro => (<Resultado><p>{livro.nome}</p> <img src={livro.src}/></Resultado>))}
+            {livrosPesquisados.map( livro => (<Resultado onClick={() => insertFavorito(livro.id)}><p>{livro.nome}</p> <img src={livro.src}/></Resultado>))}
                         
         </PesquisaContainer>
     )
